@@ -10,7 +10,7 @@ class CulturalAssessment {
                 scale: "Low-Context ↔ High-Context",
                 description: "How explicit vs. implicit your communication style is",
                 questions: [
-                    { text: "I strive to communicate simply, clearly, and explicitly. I avoid reading (and speaking) between the lines.", reversed: false },
+                    { text: "I strive to communicate simply, clearly, and explicitly. I avoid reading — and speaking – between the lines.", reversed: false },
                     { text: "The most effective presenters spell out what they're going to tell you, then tell you, and then summarize what they've told you, to ensure that the communication is crystal clear.", reversed: false },
                     { text: "After a meeting or a phone call, it is important to recap in writing exactly what was said, to prevent misunderstanding or confusion.", reversed: false }
                 ]
