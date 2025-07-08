@@ -10,9 +10,9 @@ class CulturalAssessment {
                 scale: "Low-Context ↔ High-Context",
                 description: "How explicit vs. implicit your communication style is",
                 questions: [
-                    { text: "When giving instructions or information, do you prefer to be very explicit and detailed, or do you rely on shared understanding and context?", reversed: true },
-                    { text: "How comfortable are you with messages that are not stated directly but implied through tone, body language, or context?", reversed: true },
-                    { text: "On a scale from 1 (I prefer clear, direct communication) to 7 (I prefer subtle, indirect communication), where do you see yourself?", reversed: true }
+                    "I strive to communicate simply, clearly, and explicitly. I avoid reading (and speaking) between the lines.",
+                    "The most effective presenters spell out what they're going to tell you, then tell you, and then summarize what they've told you, to ensure that the communication is crystal clear.",
+                    "After a meeting or a phone call, it is important to recap in writing exactly what was said, to prevent misunderstanding or confusion."
                 ]
             },
             {
@@ -20,19 +20,9 @@ class CulturalAssessment {
                 scale: "Direct Negative Feedback ↔ Indirect Negative Feedback",
                 description: "How direct vs. indirect your feedback style is",
                 questions: [
-                    { text: "When giving negative feedback, do you tend to be straightforward and explicit, or do you soften criticism and use indirect language?", reversed: false },
-                    { text: "How do you prefer to receive constructive criticism: directly and clearly, or with careful phrasing and positive framing?", reversed: false },
-                    { text: "On a scale from 1 (very direct) to 7 (very indirect), how do you prefer to give and receive feedback?", reversed: false }
-                ]
-            },
-            {
-                name: "Persuading",
-                scale: "Principles-First ↔ Applications-First",
-                description: "Whether you prefer theoretical or practical approaches",
-                questions: [
-                    { text: "A good presenter influences by first explaining and validating the concepts and principles behind the point before coming to practical examples and next steps.", reversed: false },
-                    { text: "Presenters who arrive quickly to outcomes, conclusions and next steps without spending time explaining theory and concepts first are less engaging to me.", reversed: false },
-                    { text: "Before making a business decision it is important to spend ample time on conceptual debate.", reversed: false }
+                    "If I've done poor work, I prefer to be told bluntly rather than gently or diplomatically.",
+                    "When I give negative feedback I pay more attention to the clarity of my criticism than how the person feels receiving the message.",
+                    "I prefer to give negative feedback immediately and all at once rather than little by little, building the picture up over time."
                 ]
             },
             {
@@ -40,9 +30,9 @@ class CulturalAssessment {
                 scale: "Egalitarian ↔ Hierarchical",
                 description: "Your preference for flat vs. hierarchical structures",
                 questions: [
-                    { text: "In a team setting, do you prefer flat structures where everyone is equal, or clear hierarchies with defined authority?", reversed: false },
-                    { text: "How comfortable are you challenging or questioning a manager or leader in a group?", reversed: false },
-                    { text: "On a scale from 1 (very egalitarian) to 7 (very hierarchical), where do you feel most comfortable?", reversed: false }
+                    "If I don't agree with the senior leaders in the room, I feel comfortable speaking up.",
+                    "When meeting with other teams, I don't pay too much attention to the hierarchical position of the people attending the meeting.",
+                    "If I have ideas to share with someone several levels above or below me in the company, I will speak to that person directly rather than passing through my boss."
                 ]
             },
             {
@@ -50,9 +40,9 @@ class CulturalAssessment {
                 scale: "Consensual ↔ Top-Down",
                 description: "Whether you prefer group consensus or leader decisions",
                 questions: [
-                    { text: "Do you prefer decisions to be made by group consensus, or by a leader making the final call?", reversed: false },
-                    { text: "How important is it for you to be involved in the decision-making process?", reversed: false },
-                    { text: "On a scale from 1 (consensus-driven) to 7 (leader-driven), what is your preference?", reversed: false }
+                    { text: "Even if it takes a long time, it is better to involve all stakeholders in the decision-making process.", reversed: false },
+                    { text: "Consensus-building ultimately leads to better decisions and stronger buy-in.", reversed: false },
+                    { text: "If my boss makes a unilateral decision I disagree with, I find it difficult to follow the decision.", reversed: false }
                 ]
             },
             {
@@ -60,9 +50,9 @@ class CulturalAssessment {
                 scale: "Task-Based ↔ Relationship-Based",
                 description: "How you build trust with colleagues",
                 questions: [
-                    { text: "Do you build trust with colleagues primarily through working together and delivering results, or through personal relationships and social interactions?", reversed: false },
-                    { text: "How important is it for you to know your colleagues personally to trust them at work?", reversed: false },
-                    { text: "On a scale from 1 (trust through work/tasks) to 7 (trust through relationships), where do you stand?", reversed: false }
+                    { text: "It is better not to get too emotionally close to those you work with.", reversed: false },
+                    { text: "I rarely devote time to socializing with colleagues, during which we don't discuss work but just get to know each other.", reversed: false },
+                    { text: "If a colleague is reliable and hardworking, I tend to trust them even if I don't know them well on a personal level.", reversed: false }
                 ]
             },
             {
@@ -70,9 +60,9 @@ class CulturalAssessment {
                 scale: "Confrontational ↔ Avoids Confrontation",
                 description: "Your comfort level with open disagreement",
                 questions: [
-                    { text: "Are you comfortable expressing disagreement openly in a group, or do you prefer to avoid open conflict?", reversed: false },
-                    { text: "How do you react when someone challenges your ideas directly?", reversed: false },
-                    { text: "On a scale from 1 (comfortable with open disagreement) to 7 (prefer to avoid confrontation), what is your style?", reversed: false }
+                    { text: "Expressing open disagreement with other team members frequently is likely to have a positive impact on a team's success.", reversed: false },
+                    { text: "When I disagree strongly with a point made by a colleague making a presentation I am comfortable expressing my disagreement.", reversed: false },
+                    { text: "Open debate, where team members confront one another's ideas and opinions, is healthy even if it is received negatively by some.", reversed: false }
                 ]
             },
             {
@@ -80,9 +70,19 @@ class CulturalAssessment {
                 scale: "Linear-Time ↔ Flexible-Time",
                 description: "Your approach to time and scheduling",
                 questions: [
-                    { text: "Do you prefer to follow a strict schedule and value punctuality, or do you see time as flexible and adapt plans as needed?", reversed: false },
-                    { text: "How do you feel about changing plans or deadlines at short notice?", reversed: false },
-                    { text: "On a scale from 1 (very structured and punctual) to 7 (very flexible and adaptable), what is your approach?", reversed: false }
+                    { text: "In order to show professionalism it is more important to be organized and structured than flexible and reactive.", reversed: false },
+                    { text: "If I have a meeting at 9:00, that's when I will arrive, not 5 or 15 minutes later.", reversed: false },
+                    { text: "A meeting agenda should be followed as closely as possible; it should not be altered just because the group wants to take the discussion in a different direction.", reversed: false }
+                ]
+            },
+            {
+                name: "Persuading",
+                scale: "Principles-First ↔ Applications-First",
+                description: "Whether you prefer theoretical or practical approaches",
+                questions: [
+                    "A good presenter influences by first explaining and validating the concepts and principles behind the point before coming to practical examples and next steps.",
+                    "Presenters who arrive quickly to outcomes, conclusions and next steps without spending time explaining theory and concepts first are less engaging to me.",
+                    "Before making a business decision it is important to spend ample time on conceptual debate."
                 ]
             }
         ];
