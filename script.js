@@ -10,9 +10,9 @@ class CulturalAssessment {
                 scale: "Low-Context ↔ High-Context",
                 description: "How explicit vs. implicit your communication style is",
                 questions: [
-                    "I strive to communicate simply, clearly, and explicitly. I avoid reading (and speaking) between the lines.",
-                    "The most effective presenters spell out what they're going to tell you, then tell you, and then summarize what they've told you, to ensure that the communication is crystal clear.",
-                    "After a meeting or a phone call, it is important to recap in writing exactly what was said, to prevent misunderstanding or confusion."
+                    { text: "I strive to communicate simply, clearly, and explicitly. I avoid reading (and speaking) between the lines.", reversed: false },
+                    { text: "The most effective presenters spell out what they're going to tell you, then tell you, and then summarize what they've told you, to ensure that the communication is crystal clear.", reversed: false },
+                    { text: "After a meeting or a phone call, it is important to recap in writing exactly what was said, to prevent misunderstanding or confusion.", reversed: false }
                 ]
             },
             {
@@ -20,9 +20,9 @@ class CulturalAssessment {
                 scale: "Direct Negative Feedback ↔ Indirect Negative Feedback",
                 description: "How direct vs. indirect your feedback style is",
                 questions: [
-                    "If I've done poor work, I prefer to be told bluntly rather than gently or diplomatically.",
-                    "When I give negative feedback I pay more attention to the clarity of my criticism than how the person feels receiving the message.",
-                    "I prefer to give negative feedback immediately and all at once rather than little by little, building the picture up over time."
+                    { text: "If I've done poor work, I prefer to be told bluntly rather than gently or diplomatically.", reversed: false },
+                    { text: "When I give negative feedback I pay more attention to how the person feels receiving the message than to how clear my criticism is.", reversed: true },
+                    { text: "I prefer to give negative feedback immediately and all at once rather than little by little, building the picture up over time.", reversed: false }
                 ]
             },
             {
@@ -30,9 +30,9 @@ class CulturalAssessment {
                 scale: "Egalitarian ↔ Hierarchical",
                 description: "Your preference for flat vs. hierarchical structures",
                 questions: [
-                    "If I don't agree with the senior leaders in the room, I feel comfortable speaking up.",
-                    "When meeting with other teams, I don't pay too much attention to the hierarchical position of the people attending the meeting.",
-                    "If I have ideas to share with someone several levels above or below me in the company, I will speak to that person directly rather than passing through my boss."
+                    { text: "If I don't agree with the senior leaders in the room, I feel comfortable speaking up.", reversed: false },
+                    { text: "When meeting with other teams, I pay attention to the hierarchical position of the people attending the meeting.", reversed: true },
+                    { text: "If I have ideas that I want to share with someone several levels above me in the company, I prefer to speak to my boss and ask them to pass it on to them.", reversed: true }
                 ]
             },
             {
@@ -41,8 +41,8 @@ class CulturalAssessment {
                 description: "Whether you prefer group consensus or leader decisions",
                 questions: [
                     { text: "Even if it takes a long time, it is better to involve all stakeholders in the decision-making process.", reversed: false },
-                    { text: "Consensus-building ultimately leads to better decisions and stronger buy-in.", reversed: false },
-                    { text: "If my boss makes a unilateral decision I disagree with, I find it difficult to follow the decision.", reversed: false }
+                    { text: "Consensus-building ultimately leads to mediocre decisions and wasted time.", reversed: true },
+                    { text: "If the boss makes a unilateral decision I disagree with I will still follow the decision.", reversed: true }
                 ]
             },
             {
@@ -51,8 +51,8 @@ class CulturalAssessment {
                 description: "How you build trust with colleagues",
                 questions: [
                     { text: "It is better not to get too emotionally close to those you work with.", reversed: false },
-                    { text: "I rarely devote time to socializing with colleagues, during which we don't discuss work but just get to know each other.", reversed: false },
-                    { text: "If a colleague is reliable and hardworking, I tend to trust them even if I don't know them well on a personal level.", reversed: false }
+                    { text: "I invest time socializing with colleagues, during which we don't discuss work but just get to know each other.", reversed: true },
+                    { text: "I can't really trust colleagues or suppliers until I have spent time getting to know them personally.", reversed: true }
                 ]
             },
             {
@@ -62,7 +62,7 @@ class CulturalAssessment {
                 questions: [
                     { text: "Expressing open disagreement with other team members frequently is likely to have a positive impact on a team's success.", reversed: false },
                     { text: "When I disagree strongly with a point made by a colleague making a presentation I am comfortable expressing my disagreement.", reversed: false },
-                    { text: "Open debate, where team members confront one another's ideas and opinions, is healthy even if it is received negatively by some.", reversed: false }
+                    { text: "Open debate, where team members confront one another's ideas and opinions, is likely to end in bad feelings and difficult relationships.", reversed: true }
                 ]
             },
             {
@@ -72,7 +72,7 @@ class CulturalAssessment {
                 questions: [
                     { text: "In order to show professionalism it is more important to be organized and structured than flexible and reactive.", reversed: false },
                     { text: "If I have a meeting at 9:00, that's when I will arrive, not 5 or 15 minutes later.", reversed: false },
-                    { text: "A meeting agenda should be followed as closely as possible; it should not be altered just because the group wants to take the discussion in a different direction.", reversed: false }
+                    { text: "A meeting agenda is just a guide. If the group wants to take the discussion in a different direction, the agenda can be adjusted to suit.", reversed: true }
                 ]
             },
             {
@@ -80,9 +80,9 @@ class CulturalAssessment {
                 scale: "Principles-First ↔ Applications-First",
                 description: "Whether you prefer theoretical or practical approaches",
                 questions: [
-                    "A good presenter influences by first explaining and validating the concepts and principles behind the point before coming to practical examples and next steps.",
-                    "Presenters who arrive quickly to outcomes, conclusions and next steps without spending time explaining theory and concepts first are less engaging to me.",
-                    "Before making a business decision it is important to spend ample time on conceptual debate."
+                    { text: "A good presenter influences by first explaining and validating the concepts and principles behind the point before coming to practical examples and next steps.", reversed: false },
+                    { text: "Presenters who get right to the point, stick to concrete examples and conclusions, rather than spending time examining principles, are more engaging to me.", reversed: true },
+                    { text: "Before making a business decision it is important to spend ample time on conceptual debate.", reversed: false }
                 ]
             }
         ];
@@ -119,11 +119,11 @@ class CulturalAssessment {
                 questionDiv.innerHTML = `
                     <p>${qText}</p>
                     <div class="scale-container">
-                        <span class="likert-label likert-label-left">Strongly Disagree</span>
+                        <span class="likert-label likert-label-left">Strongly Disagree (1)</span>
                         <div class="likert-scale">
                             ${this.generateLikertOptions(questionIndex)}
                         </div>
-                        <span class="likert-label likert-label-right">Strongly Agree</span>
+                        <span class="likert-label likert-label-right">Strongly Agree (7)</span>
                     </div>
                 `;
 
@@ -291,7 +291,7 @@ class CulturalAssessment {
                 const userValue = this.answers[questionIndex];
                 if (userValue !== undefined) {
                     // If reversed, invert the score
-                    dimensionAnswers.push(reversed ? (8 - userValue) : userValue);
+                    dimensionAnswers.push(reversed ? userValue : (8 - userValue) );
                 }
                 questionIndex++;
             }
