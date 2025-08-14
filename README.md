@@ -5,7 +5,6 @@ A web-based questionnaire tool inspired by Erin Meyer's Culture Map framework, d
 ## Features
 
 - **24 Questions**: 3 questions per dimension across 8 cultural scales
-- **Interactive Interface**: Clean, modern design with progress tracking
 - **Visual Results**: Radar chart showing your position on each scale
 - **Detailed Scores**: Individual breakdown of each dimension with descriptions
 - **Export Functionality**: Download results as CSV file
