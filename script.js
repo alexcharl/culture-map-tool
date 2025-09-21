@@ -340,14 +340,14 @@ class CulturalAssessment {
         const scaleFont = '15px Segoe UI, Arial, sans-serif';
 
         // Draw legend
-        ctx.beginPath();
-        ctx.arc(margin.left - 70, margin.top - 30, 18, 0, 2 * Math.PI);
-        ctx.fillStyle = dotColor;
-        ctx.fill();
-        ctx.font = '20px Segoe UI, Arial, sans-serif';
-        ctx.fillStyle = '#222';
-        ctx.textAlign = 'left';
-        ctx.fillText('Your Profile', margin.left - 40, margin.top - 22);
+        // ctx.beginPath();
+        // ctx.arc(margin.left - 70, margin.top - 30, 18, 0, 2 * Math.PI);
+        // ctx.fillStyle = dotColor;
+        // ctx.fill();
+        // ctx.font = '20px Segoe UI, Arial, sans-serif';
+        // ctx.fillStyle = '#222';
+        // ctx.textAlign = 'left';
+        // ctx.fillText('Your Profile', margin.left - 40, margin.top - 22);
 
         // Draw each scale
         const labels = Object.keys(scores);
