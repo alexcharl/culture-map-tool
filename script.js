@@ -171,7 +171,7 @@ class CulturalAssessment {
             this.calculateResults();
         });
         document.getElementById('retakeBtn').addEventListener('click', () => this.retakeAssessment());
-        document.getElementById('downloadBtn').addEventListener('click', () => this.downloadResults());
+        // document.getElementById('downloadBtn').addEventListener('click', () => this.downloadResults());
     }
 
     showNotice(message) {
